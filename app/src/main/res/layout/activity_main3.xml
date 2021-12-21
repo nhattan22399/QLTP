@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.ListHSActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarMain"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#8B9FE3"
+                app:title="Hải Sản"></androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EF3119"
+                android:gravity="center"
+                android:text="Super market Phúc Hải"
+                android:textColor="#FDFFFF"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgtrang"
+
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/buttonThem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Thêm" />
+                    <EditText
+                        android:id="@+id/edittextNoidung"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"></EditText>
+                    <ImageButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_se"></ImageButton>
+                </LinearLayout>
+
+
+
+                <ListView
+                    android:id="@+id/ListViewTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

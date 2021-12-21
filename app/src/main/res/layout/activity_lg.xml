@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.LoginActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarMain"
+                app:title="PHÚC HẢI"
+                android:background="#03A9F4"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+            <ImageView
+                android:id="@+id/viewflipper"
+                android:src="@drawable/nen3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"></ImageView>
+            <TextView
+
+                android:background="#03A9F4"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:textColor="#FDFFFF"
+                android:text="Super Market Phúc Hải"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="#EEF3F2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:background="#FDFBFB"
+                        android:id="@+id/imghaisan"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="55dp"
+                        android:src="@drawable/ca"></ImageButton>
+
+                    <ImageButton
+                        android:background="#FDFBFB"
+
+                        android:id="@+id/imgthit"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/meat"></ImageButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="100dp"
+                        android:paddingRight="20dp"
+                        android:text="Hải Sản"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:paddingRight="15dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thịt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:background="#F4F8F8"
+                        android:id="@+id/imgrau"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="55dp"
+                        android:src="@drawable/khac"
+                        tools:ignore="DuplicateIds"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/imgKhac"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FDFBFB"
+                        android:src="@drawable/k"
+                        tools:ignore="DuplicateIds"></ImageButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:text="Rau củ"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khác" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
